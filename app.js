@@ -3,12 +3,14 @@ let amigos = []; // Lista de amigos inicial
 
 
 function agregarAmigo() {
-    let nombre = document.querySelector("#amigo").value;
-    if (nombre === "") {
+    let inputAmigo = document.querySelector("#amigo").value;
+    if (!inputAmigo) {
         alert("El nombre no puede estar vacío");
     } else {
-        amigos.push(nombre);
-        document.querySelector("#amigo").value = "";
-        console.log(amigos); 
+        amigos.push(inputAmigo); // Agregar el nuevo amigo al arreglo
+        document.querySelector("#amigo").value = ""; // Limpiar el campo de entrada
+        
+        let ulListaAmigos = document.querySelector("#listaAmigos");
+        ulListaAmigos.innerHTML = `<li>${inputAmigo}</li>` // Agregar el nuevo amigo al inicio de la lista
     }
 }
