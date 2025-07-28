@@ -37,3 +37,5 @@ Está desarrollado con:
 - HTML5
 - CSS3
 - JavaScript (ES6)
+
+¡Gracias por visitar este repositorio! 😊
