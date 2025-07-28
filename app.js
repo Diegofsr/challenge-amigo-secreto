@@ -32,5 +32,5 @@ function sortearAmigo() {
         li = document.createElement("li"); // Crear un nuevo elemento de lista para el resultado
         li.textContent = `Tu amigo secreto es ${amigoElegido}`; // Asignar el nombre del amigo elegido al
         resultado.appendChild(li); // Agregar el elemento de lista al resultado
-        }
     }
+}
